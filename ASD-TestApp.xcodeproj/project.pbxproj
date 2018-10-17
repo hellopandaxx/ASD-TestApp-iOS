@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		AFCF2C282177035300C028D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF2C272177035300C028D0 /* AppDelegate.swift */; };
-		AFCF2C2A2177035300C028D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF2C292177035300C028D0 /* ViewController.swift */; };
+		AFCF2C2A2177035300C028D0 /* CollegesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF2C292177035300C028D0 /* CollegesViewController.swift */; };
 		AFCF2C2D2177035300C028D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCF2C2B2177035300C028D0 /* Main.storyboard */; };
 		AFCF2C2F2177035600C028D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCF2C2E2177035600C028D0 /* Assets.xcassets */; };
 		AFCF2C322177035600C028D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCF2C302177035600C028D0 /* LaunchScreen.storyboard */; };
+		AFCF2C3A21770CAB00C028D0 /* CollegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF2C3921770CAB00C028D0 /* CollegeViewController.swift */; };
+		AFCF2C3D21770D1200C028D0 /* CollegeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF2C3C21770D1200C028D0 /* CollegeService.swift */; };
+		AFCF2C402177100600C028D0 /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF2C3F2177100600C028D0 /* College.swift */; };
+		AFCF2C43217716B900C028D0 /* CollegesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF2C42217716B900C028D0 /* CollegesTableViewCell.swift */; };
+		AFCF2C4721772DD700C028D0 /* CollegeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF2C4621772DD700C028D0 /* CollegeDetail.swift */; };
+		AFCF2C49217734C700C028D0 /* CollegeRaiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF2C48217734C700C028D0 /* CollegeRaiting.swift */; };
 		D750616348C49DABD840F2B2 /* Pods_ASD_TestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8937594CD16CDD653733BF /* Pods_ASD_TestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +27,17 @@
 		AF8937594CD16CDD653733BF /* Pods_ASD_TestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASD_TestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCF2C242177035300C028D0 /* ASD-TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASD-TestApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCF2C272177035300C028D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFCF2C292177035300C028D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFCF2C292177035300C028D0 /* CollegesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegesViewController.swift; sourceTree = "<group>"; };
 		AFCF2C2C2177035300C028D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFCF2C2E2177035600C028D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFCF2C312177035600C028D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFCF2C332177035600C028D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCF2C3921770CAB00C028D0 /* CollegeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeViewController.swift; sourceTree = "<group>"; };
+		AFCF2C3C21770D1200C028D0 /* CollegeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeService.swift; sourceTree = "<group>"; };
+		AFCF2C3F2177100600C028D0 /* College.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
+		AFCF2C42217716B900C028D0 /* CollegesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegesTableViewCell.swift; sourceTree = "<group>"; };
+		AFCF2C4621772DD700C028D0 /* CollegeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeDetail.swift; sourceTree = "<group>"; };
+		AFCF2C48217734C700C028D0 /* CollegeRaiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeRaiting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +81,44 @@
 		AFCF2C262177035300C028D0 /* ASD-TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				AFCF2C412177167A00C028D0 /* Colleges */,
+				AFCF2C3E21770F9300C028D0 /* Model */,
+				AFCF2C3B21770CE400C028D0 /* Services */,
 				AFCF2C272177035300C028D0 /* AppDelegate.swift */,
-				AFCF2C292177035300C028D0 /* ViewController.swift */,
 				AFCF2C2B2177035300C028D0 /* Main.storyboard */,
 				AFCF2C2E2177035600C028D0 /* Assets.xcassets */,
 				AFCF2C302177035600C028D0 /* LaunchScreen.storyboard */,
 				AFCF2C332177035600C028D0 /* Info.plist */,
 			);
 			path = "ASD-TestApp";
+			sourceTree = "<group>";
+		};
+		AFCF2C3B21770CE400C028D0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AFCF2C3C21770D1200C028D0 /* CollegeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AFCF2C3E21770F9300C028D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFCF2C3F2177100600C028D0 /* College.swift */,
+				AFCF2C4621772DD700C028D0 /* CollegeDetail.swift */,
+				AFCF2C48217734C700C028D0 /* CollegeRaiting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFCF2C412177167A00C028D0 /* Colleges */ = {
+			isa = PBXGroup;
+			children = (
+				AFCF2C292177035300C028D0 /* CollegesViewController.swift */,
+				AFCF2C42217716B900C028D0 /* CollegesTableViewCell.swift */,
+				AFCF2C3921770CAB00C028D0 /* CollegeViewController.swift */,
+			);
+			path = Colleges;
 			sourceTree = "<group>";
 		};
 		D3F1F807A26C9E049F97E49A /* Pods */ = {
@@ -183,11 +225,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ASD-TestApp/Pods-ASD-TestApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,8 +248,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFCF2C2A2177035300C028D0 /* ViewController.swift in Sources */,
+				AFCF2C49217734C700C028D0 /* CollegeRaiting.swift in Sources */,
+				AFCF2C2A2177035300C028D0 /* CollegesViewController.swift in Sources */,
+				AFCF2C43217716B900C028D0 /* CollegesTableViewCell.swift in Sources */,
+				AFCF2C3A21770CAB00C028D0 /* CollegeViewController.swift in Sources */,
 				AFCF2C282177035300C028D0 /* AppDelegate.swift in Sources */,
+				AFCF2C3D21770D1200C028D0 /* CollegeService.swift in Sources */,
+				AFCF2C4721772DD700C028D0 /* CollegeDetail.swift in Sources */,
+				AFCF2C402177100600C028D0 /* College.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +405,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BNH7D5GX6Z;
 				INFOPLIST_FILE = "ASD-TestApp/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "sk.ASD-TestApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -369,7 +424,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BNH7D5GX6Z;
 				INFOPLIST_FILE = "ASD-TestApp/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "sk.ASD-TestApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

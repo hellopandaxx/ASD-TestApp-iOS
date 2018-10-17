@@ -9,5 +9,6 @@ target 'ASD-TestApp' do
 
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'RealmSwift'
 
 end

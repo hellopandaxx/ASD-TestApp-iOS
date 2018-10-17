@@ -1,24 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Mq-ig-5it">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Colleges View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CollegesViewController" customModule="ASD_TestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ul5-fI-sRE">
+                                <rect key="frame" x="0.0" y="64" width="375" height="514"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollegeCell" rowHeight="186" id="kmn-RK-hQ8" customClass="CollegesTableViewCell" customModule="ASD_TestApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="186"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kmn-RK-hQ8" id="fLR-6V-gG5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="185.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name lable" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5d-IT-WV8">
+                                                    <rect key="frame" x="25" y="21" width="325" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Abbr label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIP-59-1FC">
+                                                    <rect key="frame" x="25" y="52" width="325" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwU-ld-4IF">
+                                                    <rect key="frame" x="260.5" y="144" width="89.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nwU-ld-4IF" secondAttribute="trailing" constant="10" id="0SW-zc-i2N"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uIP-59-1FC" secondAttribute="bottom" constant="10" id="0hs-E1-l4z"/>
+                                                <constraint firstItem="uIP-59-1FC" firstAttribute="leading" secondItem="fLR-6V-gG5" secondAttribute="leadingMargin" constant="10" id="Ihs-gy-Bj7"/>
+                                                <constraint firstItem="H5d-IT-WV8" firstAttribute="leading" secondItem="fLR-6V-gG5" secondAttribute="leadingMargin" constant="10" id="Is8-Wk-uTy"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="uIP-59-1FC" secondAttribute="trailing" constant="10" id="Rcg-5A-cP5"/>
+                                                <constraint firstItem="uIP-59-1FC" firstAttribute="top" secondItem="H5d-IT-WV8" secondAttribute="bottom" constant="10" id="X2d-fG-P4m"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="H5d-IT-WV8" secondAttribute="trailing" constant="10" id="h3g-G2-i7i"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nwU-ld-4IF" secondAttribute="bottom" constant="10" id="uJZ-EC-raU"/>
+                                                <constraint firstItem="H5d-IT-WV8" firstAttribute="top" secondItem="fLR-6V-gG5" secondAttribute="topMargin" constant="10" id="vDa-NB-n64"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collegeName" destination="H5d-IT-WV8" id="ujy-a7-csg"/>
+                                            <outlet property="collegeShortName" destination="uIP-59-1FC" id="iln-QY-gXF"/>
+                                            <outlet property="ratingLabel" destination="nwU-ld-4IF" id="2xI-AA-5zw"/>
+                                            <segue destination="kSM-iE-G80" kind="show" identifier="showCollege" id="kKr-Ra-uIh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="7Cc-mq-27k">
+                                <rect key="frame" x="20" y="619" width="335" height="29"/>
+                                <segments>
+                                    <segment title="Rating (desc)"/>
+                                    <segment title="Raiting (asc)"/>
+                                    <segment title="Name"/>
+                                </segments>
+                                <connections>
+                                    <action selector="sortChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="NjP-Ts-Chx"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylP-hz-971">
+                                <rect key="frame" x="171.5" y="588" width="32.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ul5-fI-sRE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="12G-kS-obE"/>
+                            <constraint firstItem="7Cc-mq-27k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2jW-YI-aeo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ul5-fI-sRE" secondAttribute="trailing" id="48Q-vu-I8g"/>
+                            <constraint firstItem="ylP-hz-971" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BT8-Bk-eES"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Cc-mq-27k" secondAttribute="bottom" constant="20" id="Cbj-dn-koB"/>
+                            <constraint firstItem="ylP-hz-971" firstAttribute="top" secondItem="Ul5-fI-sRE" secondAttribute="bottom" constant="10" id="Dkx-Bu-SIC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Cc-mq-27k" secondAttribute="trailing" constant="20" id="H4T-T2-MBo"/>
+                            <constraint firstItem="Ul5-fI-sRE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vTZ-8f-58x"/>
+                            <constraint firstItem="7Cc-mq-27k" firstAttribute="top" secondItem="ylP-hz-971" secondAttribute="bottom" constant="10" id="yRl-mV-kMt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="41E-el-xUd"/>
+                    <connections>
+                        <outlet property="collegesTableView" destination="Ul5-fI-sRE" id="wlP-rY-XlH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--College View Controller-->
+        <scene sceneID="kYI-Mb-DhQ">
+            <objects>
+                <viewController id="kSM-iE-G80" customClass="CollegeViewController" customModule="ASD_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PvW-49-O4W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="College Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pn9-Kw-mft">
+                                <rect key="frame" x="10" y="164" width="355" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="College Short Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIC-d2-1oU">
+                                <rect key="frame" x="10" y="204.5" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="College Site Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oe6-Ae-cpQ">
+                                <rect key="frame" x="10" y="245.5" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oe6-Ae-cpQ" firstAttribute="top" secondItem="UIC-d2-1oU" secondAttribute="bottom" constant="20" id="2cQ-zz-6VC"/>
+                            <constraint firstItem="pn9-Kw-mft" firstAttribute="leading" secondItem="Mpv-vV-Or8" secondAttribute="leading" constant="10" id="2qI-cH-Hp9"/>
+                            <constraint firstItem="oe6-Ae-cpQ" firstAttribute="leading" secondItem="Mpv-vV-Or8" secondAttribute="leading" constant="10" id="Adr-jF-C2Q"/>
+                            <constraint firstItem="pn9-Kw-mft" firstAttribute="centerX" secondItem="PvW-49-O4W" secondAttribute="centerX" id="Fvh-sS-YY3"/>
+                            <constraint firstItem="oe6-Ae-cpQ" firstAttribute="centerX" secondItem="PvW-49-O4W" secondAttribute="centerX" id="R0N-1m-Hwl"/>
+                            <constraint firstItem="UIC-d2-1oU" firstAttribute="leading" secondItem="Mpv-vV-Or8" secondAttribute="leading" constant="10" id="SSr-kT-UCp"/>
+                            <constraint firstItem="UIC-d2-1oU" firstAttribute="centerX" secondItem="PvW-49-O4W" secondAttribute="centerX" id="VgE-QW-RDk"/>
+                            <constraint firstItem="UIC-d2-1oU" firstAttribute="top" secondItem="pn9-Kw-mft" secondAttribute="bottom" constant="20" id="a56-LN-dHz"/>
+                            <constraint firstItem="pn9-Kw-mft" firstAttribute="top" secondItem="Mpv-vV-Or8" secondAttribute="top" constant="100" id="aQ5-tl-LVJ"/>
+                            <constraint firstItem="Mpv-vV-Or8" firstAttribute="trailing" secondItem="pn9-Kw-mft" secondAttribute="trailing" constant="10" id="r6C-1h-zH3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mpv-vV-Or8"/>
+                    </view>
+                    <connections>
+                        <outlet property="collegeNameLabel" destination="pn9-Kw-mft" id="JYN-2p-LXa"/>
+                        <outlet property="collegeShortNameLabel" destination="UIC-d2-1oU" id="6Rq-6S-fY7"/>
+                        <outlet property="collegeSiteLabel" destination="oe6-Ae-cpQ" id="E8E-Nz-2Q1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2q5-8Q-a3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2119" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jjq-W5-Vxc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Mq-ig-5it" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DhC-vi-IAW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="S4j-y4-qxt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SY9-7e-rc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="134"/>
         </scene>
     </scenes>
 </document>
